@@ -1,0 +1,21 @@
+<svg width="160" height="40" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .icon {
+      fill: #00ffc8;
+      filter: drop-shadow(0 0 4px #00ffc880);
+    }
+    .text {
+      fill: #00ffc8;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  </style>
+
+  <!-- Simple Tip/Bolt Icon -->
+  <rect x="4" y="8" width="24" height="24" rx="6" class="icon"/>
+  <path d="M14 24 L18 16 H16 L20 10 L19 18 H21 L16 24 Z" fill="#121212"/>
+
+  <!-- Brand Text -->
+  <text x="40" y="26" class="text">AsiaTip</text>
+</svg>
