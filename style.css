@@ -1,0 +1,126 @@
+/* === GLOBAL STYLES === */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+a {
+  color: #00ffc8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === HEADER === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 12px rgba(0, 255, 200, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 64px;
+}
+
+/* === LOGO === */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 36px;
+  filter: drop-shadow(0 0 4px #00ffc8aa);
+}
+
+.logo span {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #00ffc8;
+  text-shadow: 0 0 6px #00ffc8aa;
+  line-height: 1;
+}
+
+/* === HEADER RIGHT === */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* === LANGUAGE SELECTOR === */
+.lang-switcher select {
+  background: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 1em;
+  height: 44px;
+  cursor: pointer;
+}
+
+.lang-switcher select:hover {
+  border-color: #00ffc8;
+}
+
+/* === PROFILE BUTTON === */
+.btn-profile {
+  background: #00ffc8;
+  color: #121212;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 12px #00ffc870;
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-profile:hover {
+  background: #00e6b8;
+  box-shadow: 0 0 20px #00ffc8aa;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .header-right {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logo span {
+    font-size: 1.2em;
+  }
+
+  .lang-switcher select,
+  .btn-profile {
+    font-size: 0.95em;
+    height: 40px;
+  }
+}
